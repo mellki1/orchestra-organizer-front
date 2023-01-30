@@ -1,7 +1,9 @@
 import './Home.css'
 import { React, useEffect, useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import api from '../services/api';
+import api from '../../services/api';
+import { useNavigate } from 'react-router-dom';
+
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
@@ -29,6 +31,7 @@ const columns = [
 function Home() {
 
     const [musics, setMusics] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         api.get('music')
@@ -37,18 +40,22 @@ function Home() {
             }).catch((err) => {
                 alert(err.response.data.message);
             });
-    });
+    }, []);
+
+    function handleCellDoubleClick(e) {
+        navigate('/music', { state: e.row });
+    }
 
     return (
         <div className='home-container'>
             <h2>Ultimos hinos tocados</h2>
-
             <div className='grid'>
                 <DataGrid
                     rows={musics}
                     columns={columns}
-                    pageSize={5}
-                    rowsPerPageOptions={[5]}
+                    pageSize={10}
+                    rowsPerPageOptions={[10]}
+                    onCellDoubleClick={(e) => handleCellDoubleClick(e)}
                 />
             </div>
         </div>

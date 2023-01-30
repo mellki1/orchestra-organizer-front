@@ -13,4 +13,10 @@
 .home-container .grid{
     width: 100%;
     height: 500px;
+    margin-top: 10px;
+}
+
+.home-container .button {
+    max-width: 10%;
+    margin-left: 90%;
 }

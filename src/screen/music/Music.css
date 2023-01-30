@@ -1,0 +1,35 @@
+.music-container {
+    width: 100%;
+    max-width: 720px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.music-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.music-container .music {
+    display: block;
+}
+
+.music-container .music input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.music-container .music select {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.music-container .music label{
+    width: 100%;
+}
+
+.music-container .button {
+    width: 100%;
+}
