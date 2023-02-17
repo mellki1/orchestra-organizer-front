@@ -10,23 +10,23 @@
     margin-bottom: 20px;
 }
 
-.music-container .music {
+.music-container .attribute {
     display: block;
 }
 
-.music-container .music input {
+.music-container .attribute input {
     height: 40px;
     width: 100%;
     margin-bottom: 30px;
 }
 
-.music-container .music select {
+.music-container .attribute select {
     height: 40px;
     width: 100%;
     margin-bottom: 30px;
 }
 
-.music-container .music label{
+.music-container .attribute label{
     width: 100%;
 }
 

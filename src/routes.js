@@ -12,7 +12,7 @@ const RoutePage = () => {
                 element={<Home />}
             />
             <Route
-                path="/music"
+                path="/music/:id"
                 element={<Music authed={true} />}
             />
         </Routes>

@@ -24,6 +24,8 @@ const columns = [
         field: 'singers',
         headerName: 'Quem canta',
         width: 200,
+        valueGetter: (params) =>
+            params.row.singers.map(singer => singer.name)
     },
 ];
 
@@ -43,7 +45,7 @@ function Home() {
     }, []);
 
     function handleCellDoubleClick(e) {
-        navigate('/music', { state: e.row });
+        navigate(`/music/${e.row.id}`);
     }
 
     return (
