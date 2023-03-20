@@ -6,4 +6,5 @@ function App() {
         <RoutePage />
     );
 }
+
 export default App;
