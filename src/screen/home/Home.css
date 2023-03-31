@@ -17,6 +17,7 @@
 }
 
 .home-container .button {
-    max-width: 10%;
-    margin-left: 90%;
+    margin-left: 80%;
+    width: 20%;
+    margin-bottom: 30px;
 }

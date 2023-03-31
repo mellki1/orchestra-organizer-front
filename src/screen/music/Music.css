@@ -10,26 +10,26 @@
     margin-bottom: 20px;
 }
 
-.music-container .attribute {
+.updateForm .music-container .attribute {
     display: block;
 }
 
-.music-container .attribute input {
+.updateForm .music-container .attribute input {
     height: 40px;
     width: 100%;
     margin-bottom: 31px;
 }
 
-.music-container .attribute select {
+.updateForm .music-container .attribute select {
     height: 40px;
     width: 100%;
     margin-bottom: 30px;
 }
 
-.music-container .attribute label{
+.updateForm .music-container .attribute label{
     width: 100%;
 }
 
-.music-container .button {
+.updateForm .music-container .button {
     width: 100%;
 }

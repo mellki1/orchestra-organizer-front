@@ -48,9 +48,14 @@ function Home() {
         navigate(`/music/${e.row.id}`);
     }
 
+    const handleSubmit = async (event) => {
+        navigate('/music/create')
+    }
+
     return (
         <div className='home-container'>
             <h2>Ultimos hinos tocados</h2>
+            <button className='button' type='submit' onClick={(e) => handleSubmit(e)}>Adicionar música</button>
             <div className='grid'>
                 <DataGrid
                     rows={musics}
